@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popular Movies</title>
+</head>
+<body>
+    <h1>Popular Movies</h1>
+    <ul>
+        <% movies.forEach(movie => { %>
+            <li><%= movie.title %> (<%= movie.release_date %>)</li>
+        <% }); %>
+    </ul>
+    <a href="/search">Search for Movies</a>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Movies</title>
+</head>
+<body>
+    <h1>Search Movies</h1>
+    <form action="/movies/search" method="get">
+        <input type="text" name="query" placeholder="Enter movie name" required />
+        <button type="submit">Search</button>
+    </form>
+
+    <ul>
+        <% movies.forEach(movie => { %>
+            <li><%= movie.title %> (<%= movie.release_date %>)</li>
+        <% }); %>
+    </ul>
+    <a href="/movies/popular">Back to Popular Movies</a>
+</body>
+</html>

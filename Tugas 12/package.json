@@ -1,0 +1,24 @@
+{
+    "name": "movie-search-tmdb",
+    "version": "1.0.0",
+    "description": "A web application to display and search popular movies using TMDb API",
+    "main": "app.js",
+    "scripts": {
+      "start": "node app.js"
+    },
+    "keywords": [
+      "movies",
+      "TMDb",
+      "popular",
+      "search",
+      "express"
+    ],
+    "author": "M Fajrin Tsinan F",
+    "license": "MIT",
+    "dependencies": {
+      "axios": "^1.4.0",
+      "ejs": "^3.1.9",
+      "express": "^4.18.2"
+    }
+  }
+  
